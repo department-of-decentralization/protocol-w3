@@ -78,9 +78,12 @@ const IndexPage = () => {
           <Ref src={refs.dod} /> event.
         </p>
         <p className="italic text-center">
-          For the previous (genesis) edition's speakers, recordings, and gallery, see also{" "}
+          For the previous edition's speakers, recordings, and gallery, see {" "}
           <a href="https://v1.protocol.berlin" target="_blank" rel="noreferrer">
             Protocol Berg v1 (2023)
+          </a> and {" "}
+          <a href="https://v2.protocol.berlin" target="_blank" rel="noreferrer">
+            Protocol Berg v2 (2025)
           </a>
           .
         </p>
@@ -90,7 +93,7 @@ const IndexPage = () => {
         <h2 className="font-bold" id="abstract">
           Abstract
         </h2>
-        <small className="mt-4">
+        <small className="mt-4 block leading-snug">
           Protocol Berg v2 was a conference focusing on protocol research, decentralized infrastructure, and
           core-developer experience. The two-day event with multiple stages, opportunities for technical workshops, and
           protocol community gatherings brought together protocol researchers and other stakeholders from different
@@ -113,36 +116,12 @@ const IndexPage = () => {
               </a>
             </li>
             <li>
-              <a href="#schedule">1.2 Schedule</a>
-            </li>
-            <li>
-              <a href="#speakers">1.3 Speakers</a>
-            </li>
-            <li>
-              <a href="#gallery">1.4 Gallery</a>
+              <a href="#gallery">1.2 Gallery</a>
             </li>
           </ul>
           <li>
             <a href="#cfp">2. Call for Participation</a>
           </li>
-          <ul className="pl-6">
-            <li>
-              <a href="#cfp-speakers">
-                <s>2.1 Speakers</s>
-              </a>
-            </li>
-            <li>
-              <a href="#cfp-volunteers">
-                <s>2.2 Volunteers</s>
-              </a>
-            </li>
-            <li>
-              <a href="#cfp-attendees">
-                {" "}
-                <s>2.3 Attendees</s>
-              </a>
-            </li>
-          </ul>
           <li>
             <a href="#venue">3. Venue</a>
           </li>
@@ -200,9 +179,12 @@ const IndexPage = () => {
           <a href="https://matrix.to/#/%23protocol:dod.ngo" target="_blank" rel="noreferrer">
             Matrix
           </a>{" "}
-          for updates. For the previous event, see{" "}
+          for updates. For the previous events, see{" "}
           <a href="https://v1.protocol.berlin" target="_blank" rel="noreferrer">
             Protocol Berg v1
+          </a> and {" "}
+          <a href="https://v2.protocol.berlin" target="_blank" rel="noreferrer">
+            Protocol Berg v2
           </a>
           .
         </p>
@@ -220,44 +202,8 @@ const IndexPage = () => {
             youtube.com/@departmentofdecentralization
           </a>
         </p>
-        <h3 className="font-bold" id="schedule">
-          1.2 Schedule
-        </h3>
-        <p>
-          For a full-screen view of the schedule, check out the pretalx page:
-          <br />
-          <a href="https://sched.protocol.berlin/" target="_blank" rel="noreferrer" className="ml-12">
-            sched.protocol.berlin
-          </a>
-        </p>
-        <div className="mt-4">
-          <Schedule isDarkMode={isDarkMode} speakers={speakers} />
-          <div className="flex items-center justify-center text-lg mt-4">
-            <p>Figure 1: Schedule of Protocol Berg, 2025. </p>
-          </div>
-        </div>
-        <h3 className="font-bold" id="speakers">
-          1.3 Speakers
-        </h3>
-        <div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto">
-            {[...speakers] // sort speakers randomly
-              .sort(() => Math.random() - 0.5)
-              .map((speaker, index) => (
-                <div className="text-center" key={speaker.code}>
-                  <Speaker speaker={speaker} index={index} />
-                </div>
-              ))}
-          </div>
-          <div className="flex items-center justify-center text-lg">
-            <p>Figure 2: Speakers of Protocol Berg, 2025. </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
         <h3 className="font-bold" id="gallery">
-          1.4 Gallery
+          1.2 Gallery
         </h3>
         <div>
           <p>
@@ -281,30 +227,8 @@ const IndexPage = () => {
         <h2 className="font-bold" id="cfp">
           2. Call for Participation
         </h2>
-        <h3 className="font-bold" id="cfp-speakers">
-          2.1 <s>Speakers</s>
-        </h3>
         <p>
-          The deadine to submit talks and workshops has passed. Thanks for all the great submissions! To manage your
-          proposal you can visit
-          <br />
-          <a href="https://cfp.protocol.berlin/protocol-berg-v2/cfp" target="_blank" className="ml-12">
-            cfp.protocol.berlin
-          </a>
-        </p>
-        <h3 className="font-bold" id="cfp-volunteers">
-          2.2 <s>Volunteers</s>
-        </h3>
-        <p>Volunteer applications has been closed. Thanks to everyone who volunteered!</p>
-        <h3 className="font-bold" id="cfp-attendees">
-          2.3 <s>Attendees</s>
-        </h3>
-        <p>
-          General admission applications are now closed. If you have already received a ticket, you can manage it at
-          <br />
-          <a href="https://tickets.protocol.berlin/" target="_blank" rel="noreferrer" className="ml-12">
-            tickets.protocol.berlin
-          </a>
+          The deadine to submit talks and workshops has passed.
         </p>
       </section>
       <section>
@@ -362,7 +286,8 @@ const IndexPage = () => {
           <Ref src={refs.ethb2rlin} />
           <Ref src={refs.ethb3rlin} />
           <Ref src={refs.ethb4rlin} />, Protocol Berg
-          <Ref src={refs.protocol2023} />, and GoerliCon
+          <Ref src={refs.protocol2023} />
+          <Ref src={refs.protocol2025} />, and GoerliCon
           <Ref src={refs.goerli} />, and has been active since.
         </p>
         <p>
