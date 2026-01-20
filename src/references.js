@@ -46,6 +46,13 @@ const references = {
     url: "https://v1.protocol.berlin",
     accessed: "25.10.2024",
   },
+  protocol2025: {
+    author: "Protocol Berg v2",
+    description: "The decentralized protocol and infrastructure conference.",
+    year: "2025",
+    url: "https://v2.protocol.berlin",
+    accessed: "20.01.2026",
+  },
   colosseum: {
     author: "Colosseum",
     description: "Event Location.",

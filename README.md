@@ -8,7 +8,7 @@ This is a website on the world-wide web utilizing hyper-links to assist you navi
 
 ## Install
 
-Minimum required Node.js version is 18.
+Minimum required Node.js version is 22.x.
 
 ```
 npm install
